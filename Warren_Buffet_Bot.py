@@ -64,6 +64,9 @@ st.markdown("""
 
 st.markdown('<div class="custom-title">What Would Warren Do?</div>', unsafe_allow_html=True)
 
+st.write(' ')
+st.write(' ')
+st.write(' ')
 
 # load image in sidebar
 st.sidebar.image('images/warren2.png', width=300, caption= 'Robot Warren Buffet courtesy of midjourney AI')
@@ -76,6 +79,9 @@ os.environ['OPENAI_API_KEY'] = st.secrets['openAI_API_Key']
 
 #Ask Warren Buffet a question
 query = st.text_input('Ask Warren Buffet a question and press GO!',)
+st.write(' ')
+st.write(' ')
+st.write(' ')
 
 
 # prompt weither to show source documents
