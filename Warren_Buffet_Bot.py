@@ -79,9 +79,7 @@ os.environ['OPENAI_API_KEY'] = st.secrets['openAI_API_Key']
 
 #Ask Warren Buffet a question
 query = st.text_input('Ask Warren Buffet a question and press GO!',)
-st.write(' ')
-st.write(' ')
-st.write(' ')
+
 
 
 # prompt weither to show source documents
@@ -93,5 +91,5 @@ go = st.button('Go')
 if go:
     docs = vectorstore.similarity_search(query, include_metadata=True, top_k=3)
     answer = chain.run(input_documents= docs, question = query)
-    st.write('Warren Says:', answer)
+    st.write('Robot Warren Buffet Answers:', answer)
 
