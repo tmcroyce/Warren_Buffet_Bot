@@ -91,7 +91,7 @@ go = st.button('Go')
 if go:
     docs = vectorstore.similarity_search(query, include_metadata=True, top_k=3)
     answer = chain.run(input_documents= docs, question = query)
-    st.write('Robot Warren Buffet Answers:')
+    #st.write('Robot Warren Buffet Answers:')
     # add answer as an html block
     st.markdown(f'<div style="background-color:#142630; color:white; padding: 10px; border-radius: 10px; font-size: 20px; font-weight: bold; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);">{answer}</div>', unsafe_allow_html=True)
     st.write(' ')
